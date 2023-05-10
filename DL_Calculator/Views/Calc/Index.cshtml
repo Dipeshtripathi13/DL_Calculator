@@ -1,0 +1,64 @@
+﻿@model DL_Calculator.Models.calc
+@{
+    ViewBag.Title = "Index";
+}
+<html>
+<head>
+
+</head>
+<body>
+    <h1>
+        DL Method Calculator
+    </h1>
+    <p>
+        An online sports duckworth-lewis calculation
+    </p>
+
+    <div class="row">
+
+        @using (Html.BeginForm("Index", "calc", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label for="A_run">Team A Runes</label>
+                <br>
+                <input type="text" class="form-control" id="A_run" name="A_run" value="@Model.A_run">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="A_wicket">Team A Wickets</label>
+                <br>
+                <input type="text" class="form-control" id="A_wicket" name="A_wicket" value="@Model.A_wicket">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="B_over">Team B Overs</label>
+                <br>
+                <input type="text" class="form-control" id="B_over" name="B_over" value="@Model.B_over">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="B_wicket">Team B Wickets</label>
+                <br>
+                <input type="text" class="form-control" id="B_wicket" name="B_wicket" value="@Model.B_wicket">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="Max_over">Maximum Overs</label>
+                <br>
+                <input type="text" class="form-control" id="Max_over" name="Max_over" value="@Model.Max_over">
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="B_target">Required target for team B</label>
+                <br>
+                <input type="text" class="form-control" id="B_target" name="B_target" value="@Model.B_target">
+                <br>
+            </div>
+            <button type="submit" class="btn btn-info" id="add" value="add" name="calculate">Calculate</button>
+            <button type="submit" class="btn btn-danger" id="min" value="min" name="calculate">sub</button>
+        }
+    </div>
+
+
+</body>
+</html>

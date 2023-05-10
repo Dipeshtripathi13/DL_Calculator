@@ -1,0 +1,4 @@
+﻿1. Create the html view in programiz HTML editor
+2. Create Asp.net web app(mvc) project
+3. Add the movels i.e A_run, A_wicket, B_over, B_wicket, Max_over, target
+4. Go the the contraller folder and add CalcController.cs controllerl
