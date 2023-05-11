@@ -7,7 +7,7 @@
         public int B_over { get; set; }
         public int B_wicket { get; set; }
         public int Max_over { get; set; }
-        public int B_target { get; set; }
+        public decimal B_target { get; set; }
 
 
     }

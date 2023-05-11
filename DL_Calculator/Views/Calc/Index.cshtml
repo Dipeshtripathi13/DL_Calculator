@@ -48,14 +48,18 @@
                 <input type="text" class="form-control" id="Max_over" name="Max_over" value="@Model.Max_over">
                 <br>
             </div>
+            
+            <button type="submit" class="btn btn-info" id="add" value="add" name="calculate">Calculate</button>
+            <button type="reset" class="btn btn-danger" id="min" value="min" name="calculate">Clear</button>
+            <br>
+            <br>
+
             <div class="form-group">
                 <label for="B_target">Required target for team B</label>
                 <br>
                 <input type="text" class="form-control" id="B_target" name="B_target" value="@Model.B_target">
                 <br>
             </div>
-            <button type="submit" class="btn btn-info" id="add" value="add" name="calculate">Calculate</button>
-            <button type="submit" class="btn btn-danger" id="min" value="min" name="calculate">sub</button>
         }
     </div>
 
